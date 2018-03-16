@@ -192,7 +192,7 @@ renderer.setSize(2560, 1440);
 
 var grid = new Grid(640, 360);
 var addValue = 1;
-var runSimulation = true;
+var runSimulation = false;
 var timeSinceUpdate = delay;
 var now = 0;
 var dt=0;
