@@ -182,15 +182,15 @@ function mainLoop() {
 var paint = false;
 var canvas = document.getElementById("drawingCanvas");
 var scene = new THREE.Scene();
-var camera = new THREE.OrthographicCamera(0, 2560, 0, 1440, -1, 1);
+var camera = new THREE.OrthographicCamera(0, 1920, 0, 1080, -1, 1);
 var mousepos = {x:0, y:0};
 scene.add(camera);
 
 var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
 renderer.setClearColor( 0xffffff, 0);
-renderer.setSize(2560, 1440);
+renderer.setSize(1920, 1080);
 
-var grid = new Grid(640, 360);
+var grid = new Grid(480, 270);
 var addValue = 1;
 var runSimulation = false;
 var timeSinceUpdate = delay;
